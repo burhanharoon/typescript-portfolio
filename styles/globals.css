@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -13,4 +18,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.bg-gradient {
+  background: linear-gradient(74deg,
+      #ede6d6 25%, #111111 25% 50%, #111111 50% 75%, #111111 75%);
+}
+
+.about-button {
+  transition: all 0.3s ease-in;
+}
+
+.about-button:hover {
+  background: #FFB400;
+}
+
+.gg {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
