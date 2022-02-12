@@ -6,8 +6,8 @@ const Button: NextPage = ({ width, title }) => {
     return (
 
 
-        <div className={`about-button relative ${width} h-14 px-9 pr-16 flex justify-center items-center gap-4 text-white border border-yellow-prime rounded-full`}>
-            <div className='uppercase font-bold'>{title}</div>
+        <div className={`about-button relative w-72 h-14 px-9 pr-16 flex justify-center items-center gap-4 text-white border border-yellow-prime rounded-full`}>
+            <div className='uppercase font-bold'>More About me</div>
             <div className='absolute -right-2 w-14 h-14 bg-yellow-prime rounded-full'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
