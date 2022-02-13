@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import AboutScreen from './Screens/AboutScreen'
-import HomeScreen from './Screens/HomeScreen'
+import HomeScreen from '../Screens/HomeScreen'
 
 const Home: NextPage = () => {
 

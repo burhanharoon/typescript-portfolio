@@ -4,29 +4,28 @@ import { motion } from "framer-motion"
 const HomeScreen: NextPage = () => {
 
     return (
-        <div className=' text-center px-12 bg-black-prime w-full h-screen flex justify-center items-center flex-col gap-4'>
+        <div className=' text-center px-4 bg-black-prime w-full h-screen flex justify-center items-center flex-col gap-4'>
             <motion.div
                 animate={{
-                    scale: [1, 2, 2, 1, 1],
+                    scale: [1, 1.2, 1.2, 1, 1],
                     rotate: [0, 0, 270, 270, 0],
                     borderRadius: ["20%", "20%", "50%", "50%", "100%"],
                 }}
-                className=' bg-yellow-prime w-64 h-64'
-            // className=' bg-yellow-prime w-64 h-64 rounded-full'
+                className=' bg-yellow-prime w-52 h-52'
             >
 
             </motion.div>
 
-            <div className=' text-4xl text-yellow-prime uppercase font-bold'>
-                i'm burhan haroon.
+            <div className='text-3xl sm:text-4xl text-yellow-prime uppercase font-bold'>
+                i&apos;m burhan haroon.
             </div>
 
-            <div className=' text-4xl text-white uppercase font-bold'>
+            <div className='text-2xl sm:text-4xl text-white uppercase font-bold'>
                 WEB DEVELOPER
             </div>
 
-            <div className=' text-white text-sm text-center'>
-                I'm a Lahore based Software Engineer &#38; MERN Stack developer focused on crafting clean &#38; user‑friendly experiences. I am passionate about building excellent software that improves the lives of those around me.
+            <div className=' leading-6 text-white text-sm text-center'>
+                I&apos;m a Lahore based Software Engineer &amp; MERN Stack developer focused on crafting clean &amp; user‑friendly experiences. I am passionate about building excellent software that improves the lives of those around me.
             </div>
 
             <div className='about-button relative h-14 px-9 pr-16 flex justify-center items-center gap-4 text-white border border-yellow-prime rounded-full'>

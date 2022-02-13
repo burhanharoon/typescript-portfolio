@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import AboutScreen from '../Screens/AboutScreen'
+import AboutScreen from '../../Screens/AboutScreen'
 import { motion } from "framer-motion"
 
 

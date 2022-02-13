@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import { motion } from "framer-motion"
 import { useState } from 'react'
-import frontend from "../about/frontend"
-import otherLanguages from "../about/otherLanguages"
-import backend from "../about/backend"
+import frontend from "../data/frontend"
+import otherLanguages from "../data/otherLanguages"
+import backend from "../data/backend"
 
 
 const AboutScreen: NextPage = () => {
@@ -52,18 +52,18 @@ const AboutScreen: NextPage = () => {
             <motion.div variants={item} className=' text-[56px] relative text-4xl z-10 font-bold uppercase'>
                 <span>About </span>
                 <span className=' text-yellow-prime'>me</span>
-                <div className=' tracking-widest text-[110px] absolute z-0 top-0 -left-40 opacity-20'>
+                <div className=' tracking-widest text-7xl sm:text-[110px] absolute z-0 -top-4 sm:top-0 -left-16 sm:-left-40 opacity-20'>
                     RESUME
                 </div>
             </motion.div>
 
 
-            <motion.div variants={item} className='  place-content-center grid items-center grid-cols-none md:grid-cols-3 gap-4'>
+            <motion.div variants={item} className='  place-content-center grid items-center grid-cols-none md:grid-cols-3 gap-8 sm:gap-4'>
 
                 {/* Personal Info */}
                 <div className='md:col-span-2 h-min'>
                     <h1 className='uppercase text-3xl font-semibold mb-8'>PERSONAL INFOS</h1>
-                    <div className='grid grid-cols-2 gap-4 md:gap-8'>
+                    <div className='text-sm sm:text-base grid grid-cols-2 gap-4 md:gap-8'>
                         <div>
                             <span className=' opacity-80'>First Name: </span>
                             <span>Burhan </span>
@@ -94,7 +94,7 @@ const AboutScreen: NextPage = () => {
                         </div>
                         <div>
                             <span className=' opacity-80'>Email: </span>
-                            <span>mirzaburhan0007@gmail.com </span>
+                            <span>mirzaburhan0007 @gmail.com </span>
                         </div>
                     </div>
                 </div>
@@ -255,5 +255,6 @@ const AboutScreen: NextPage = () => {
         </motion.div>
     )
 }
+
 
 export default AboutScreen

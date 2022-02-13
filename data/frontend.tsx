@@ -4,17 +4,17 @@ const frontend = [
     {
         id: 1,
         title: "React JS",
-        icon: <ReactIcon />,
+        icon: <ReactIcon w={25} h={25} />,
     },
     {
         id: 2,
         title: "Next JS",
-        icon: <NextIcon />,
+        icon: <NextIcon w={25} h={25} />,
     },
     {
         id: 3,
         title: "Tailwind CSS",
-        icon: <TailwindIcon />,
+        icon: <TailwindIcon w={25} h={25} />,
     },
     {
         id: 4,
