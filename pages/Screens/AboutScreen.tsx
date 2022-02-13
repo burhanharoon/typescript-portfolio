@@ -1,9 +1,26 @@
 import type { NextPage } from 'next'
 import { motion } from "framer-motion"
+import TabComponent from '../Components/TabComponent'
+import { useState } from 'react'
 
 
 const AboutScreen: NextPage = () => {
+    const [show1, setShow1] = useState(true)
+    const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
 
+    let color1 = show1 ? "#fff" : "#111"
+    let color2 = show2 ? "#fff" : "#111"
+    let color3 = show3 ? "#fff" : "#111"
+    const changePreview = (divNumber: number) => {
+        if (divNumber === 1) {
+            !show1 && setShow1(true); setShow2(false); setShow3(false)
+        } else if (divNumber === 2) {
+            !show2 && setShow1(false); setShow2(true); setShow3(false)
+        } else {
+            !show3 && setShow1(false); setShow2(false); setShow3(true)
+        }
+    }
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -169,7 +186,95 @@ const AboutScreen: NextPage = () => {
 
             {/* Skills */}
 
+            <motion.div className=' bg-white w-80 h-96 rounded-xl p-4 text-black flex flex-col justify-start'>
+                <motion.div className='flex'>
 
+                    <motion.div
+                        onClick={() => { changePreview(1) }}
+                        initial={{ width: "0px" }}
+                        animate={show1 ? { width: "200px" } : { width: "50px" }}
+                        transition={{ duration: 1 }}
+                        className={show1 ? 'py-4 rounded-3xl bg-orange-500 flex justify-center' : 'py-4 rounded-3xl  flex justify-center'}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width={20}
+                            height={20}
+                            viewBox="0 0 512 512">
+                            <circle
+                                cx={256.1}
+                                cy={128.6}
+                                r={128.6}
+                                fill={color1}
+                                transform="rotate(-45.001 256.1 128.604)"
+                                className="color231f20 svgShape"
+                            />
+                            <path
+                                fill={color1}
+                                d="M403.6 364.5c-9.9-9.9-63.1-61.1-147.5-61.1s-137.7 51.3-147.5 61.1C48.9 424.2 47.5 498.1 47.5 512h417.2c0-13.9-1.4-87.8-61.1-147.5z"
+                                className="color231f20 svgShape"
+                            />
+                        </svg>
+                        {show1 && <h1>Frontend</h1>}
+                    </motion.div>
+
+                    <motion.div
+                        onClick={() => { changePreview(2) }}
+                        initial={{ width: "0px" }}
+                        animate={show2 ? { width: "200px" } : { width: "50px" }}
+                        transition={{ duration: 1 }}
+                        className={show2 ? 'py-4 rounded-3xl bg-green-500 flex justify-center' : 'py-4 rounded-3xl  flex justify-center'}>
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width={20}
+                            height={20}
+                            viewBox="0 0 512 512">
+                            <circle
+                                cx={256.1}
+                                cy={128.6}
+                                r={128.6}
+                                fill={color2}
+                                transform="rotate(-45.001 256.1 128.604)"
+                                className="color231f20 svgShape"
+                            />
+                            <path
+                                fill={color2}
+                                d="M403.6 364.5c-9.9-9.9-63.1-61.1-147.5-61.1s-137.7 51.3-147.5 61.1C48.9 424.2 47.5 498.1 47.5 512h417.2c0-13.9-1.4-87.8-61.1-147.5z"
+                                className="color231f20 svgShape"
+                            />
+                        </svg>
+                        {show2 && <h1>Frontend</h1>}
+                    </motion.div>
+
+                    <motion.div
+                        onClick={() => { changePreview(3) }}
+                        initial={{ width: "0px" }}
+                        animate={show3 ? { width: "200px" } : { width: "50px" }}
+                        transition={{ duration: 1 }}
+                        className={show3 ? 'py-4 rounded-3xl bg-purple-500 flex justify-center' : 'py-4 rounded-3xl  flex justify-center'}>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width={20}
+                            height={20}
+                            viewBox="0 0 512 512">
+                            <circle
+                                cx={256.1}
+                                cy={128.6}
+                                r={128.6}
+                                fill={color3}
+                                transform="rotate(-45.001 256.1 128.604)"
+                                className="color231f20 svgShape"
+                            />
+                            <path
+                                fill={color3}
+                                d="M403.6 364.5c-9.9-9.9-63.1-61.1-147.5-61.1s-137.7 51.3-147.5 61.1C48.9 424.2 47.5 498.1 47.5 512h417.2c0-13.9-1.4-87.8-61.1-147.5z"
+                                className="color231f20 svgShape"
+                            />
+                        </svg>
+                        {show3 && <h1>Frontend</h1>}
+                    </motion.div>
+
+
+                </motion.div>
+            </motion.div>
         </motion.div>
     )
 }
