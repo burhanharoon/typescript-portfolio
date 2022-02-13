@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { motion } from "framer-motion"
-import TabComponent from '../Components/TabComponent'
 import { useState } from 'react'
 import frontend from "../about/frontend"
 import otherLanguages from "../about/otherLanguages"

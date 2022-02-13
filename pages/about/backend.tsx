@@ -1,7 +1,6 @@
-import React from "react";
-import { TailwindIcon, BootstrapIcon, Nodejs, Expressjs, Mongodb, PostgreSQL, GraphQl } from "../assets/reactIcon"
+import { Nodejs, Expressjs, Mongodb, PostgreSQL, GraphQl } from "../assets/reactIcon"
 
-const frontend = [
+const backend = [
     {
         id: 1,
         title: "Node JS",
@@ -34,4 +33,4 @@ const frontend = [
 
 ];
 
-export default frontend;
+export default backend;

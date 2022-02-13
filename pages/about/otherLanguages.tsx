@@ -1,7 +1,6 @@
-import React from "react";
-import { ReactIcon, NextIcon, TailwindIcon, BootstrapIcon, TypeScript, Github, Python, CPlusPlus, Java } from "../assets/reactIcon"
+import { Github, Python, CPlusPlus, Java } from "../assets/reactIcon"
 
-const frontend = [
+const otherLanguages = [
     {
         id: 1,
         title: "Github / Gitlab",
@@ -25,4 +24,4 @@ const frontend = [
 
 ];
 
-export default frontend;
+export default otherLanguages;

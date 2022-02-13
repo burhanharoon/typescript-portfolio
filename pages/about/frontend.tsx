@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactIcon, NextIcon, TailwindIcon, BootstrapIcon, TypeScript } from "../assets/reactIcon"
 
 const frontend = [
