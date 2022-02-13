@@ -38,3 +38,20 @@ a {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
+.skill-html {
+  background-color: hsl(192, 93%, 62%, 0.9);
+  z-index: 100;
+}
+
+.skill-github {
+  z-index: 99;
+  background-color: hsl(360, 94%, 63%, 0.9);
+}
+
+.skill-next {
+  top: 10;
+  right: -140px;
+  z-index: 99;
+  background-color: hsl(239, 43%, 48%, 0.9);
+}

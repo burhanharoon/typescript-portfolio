@@ -1,14 +1,21 @@
 import type { NextPage } from 'next'
-import Button from '../Components/Button'
+import { motion } from "framer-motion"
 
 const HomeScreen: NextPage = () => {
 
-
     return (
         <div className=' text-center px-12 bg-black-prime w-full h-screen flex justify-center items-center flex-col gap-4'>
-            <div className=' bg-yellow-prime w-64 h-64 rounded-full'>
+            <motion.div
+                animate={{
+                    scale: [1, 2, 2, 1, 1],
+                    rotate: [0, 0, 270, 270, 0],
+                    borderRadius: ["20%", "20%", "50%", "50%", "100%"],
+                }}
+                className=' bg-yellow-prime w-64 h-64'
+            // className=' bg-yellow-prime w-64 h-64 rounded-full'
+            >
 
-            </div>
+            </motion.div>
 
             <div className=' text-4xl text-yellow-prime uppercase font-bold'>
                 i'm burhan haroon.
