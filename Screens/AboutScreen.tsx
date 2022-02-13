@@ -52,7 +52,7 @@ const AboutScreen: NextPage = () => {
             <motion.div variants={item} className=' text-[56px] relative text-4xl z-10 font-bold uppercase'>
                 <span>About </span>
                 <span className=' text-yellow-prime'>me</span>
-                <div className=' tracking-widest text-7xl sm:text-[110px] absolute z-0 -top-4 sm:top-0 -left-16 sm:-left-40 opacity-20'>
+                <div className=' tracking-widest text-7xl sm:text-[110px] absolute z-0 -top-4 sm:-top-8 -left-16 sm:-left-40 opacity-20'>
                     RESUME
                 </div>
             </motion.div>
