@@ -103,7 +103,7 @@ const AboutScreen: NextPage = () => {
                 {/* Skills */}
                 <div className='w-full flex justify-center'>
                     <motion.div variants={item} className=' bg-white w-80 h-96 rounded-3xl p-4 text-black flex flex-col justify-start gap-4'>
-                        <motion.div className='flex cursor-pointer'>
+                        <motion.div className='flex sm:cursor-pointer'>
 
                             <motion.div
                                 onClick={() => { changePreview(1) }}
