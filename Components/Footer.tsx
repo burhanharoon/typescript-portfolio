@@ -30,16 +30,12 @@ const Footer: NextPage = () => {
                 temp = { ...temp, ...obj }
             }
         });
-        // if (!_.isEqual(tabs, temp)) {
-        //     setTabs(temp)
-        // }
         setTabs(temp)
-
     }
 
     return (
 
-        <div className=' fixed bottom-0 bg-light-black-prime w-full flex justify-around items-center py-2 px-4'>
+        <div className='fixed bottom-0 bg-light-black-prime w-full flex justify-around items-center py-2 px-4'>
             <Link href="/">
                 <motion.div
                     whileHover={{ scale: 1.1 }}
